@@ -1,0 +1,179 @@
+{
+  "contractName": "IPriceFeed",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getLatestPrice",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "price",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lastUpdatedTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getLatestPrice\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"price\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"lastUpdatedTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IPriceFeed.sol\":\"IPriceFeed\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/IPriceFeed.sol\":{\"keccak256\":\"0x010e03034fd07fa368d23d8cd375bc4e563e8ca567f9860f9eeabd854377d90d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c8f593e5f2e2d30b182efed5c1e78fe6062295742406523ecceed51a971554bf\",\"dweb:/ipfs/Qmf1UcKAZhsyTthGhTQcRariftC3rADUKMWqxm8uGWX9QQ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.8.0 <0.9.0;\n\ninterface IPriceFeed {\n    function getLatestPrice() external view returns (int price, uint lastUpdatedTime);\n}\n",
+  "sourcePath": "/Users/sawyer_ren/Documents/RustProject/ece598pv-sp2022/FinalProject/Part2/contracts/interfaces/IPriceFeed.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IPriceFeed.sol",
+    "exportedSymbols": {
+      "IPriceFeed": [
+        2249
+      ]
+    },
+    "id": 2250,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 2241,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:31:15"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 2249,
+        "linearizedBaseContracts": [
+          2249
+        ],
+        "name": "IPriceFeed",
+        "nameLocation": "75:10:15",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8e15f473",
+            "id": 2248,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getLatestPrice",
+            "nameLocation": "101:14:15",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2242,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:15"
+            },
+            "returnParameters": {
+              "id": 2247,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 2244,
+                  "mutability": "mutable",
+                  "name": "price",
+                  "nameLocation": "145:5:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2248,
+                  "src": "141:9:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 2243,
+                    "name": "int",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "141:3:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 2246,
+                  "mutability": "mutable",
+                  "name": "lastUpdatedTime",
+                  "nameLocation": "157:15:15",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 2248,
+                  "src": "152:20:15",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 2245,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "152:4:15",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "140:33:15"
+            },
+            "scope": 2249,
+            "src": "92:82:15",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 2250,
+        "src": "65:111:15",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:145:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.7+commit.e28d00a7.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-04-14T15:57:18.407Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

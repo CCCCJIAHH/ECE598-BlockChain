@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0"
+  },
+  "name": "part2",
+  "description": "As we know, synthetic assets are created to mimic the value of other assets, but value cannot be created out of nothing. To mint some amount of sAsset, a certain amount of existing tokens (usually at a higher value) need to be collateralized. Such binding commitments are represented by collateralized debt positions (CDP).",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
